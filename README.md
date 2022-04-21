@@ -1,1 +1,1 @@
-telegram-exchange-rates-bot
+@nbu_exchange_rates_bot
