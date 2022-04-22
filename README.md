@@ -2,19 +2,35 @@
 
 # INSTALL
 
+```
 cd /opt
 git clone https://github.com/alex-79/telegram-exchange-rates-bot.git
 cd telegram-exchange-rates-bot
-
 python3 -m venv venv
 source venv/bin/activate
 python3 -m pip install aiogram
 python3 -m pip install requests
 python3 -m pip install configparser
+```
+
+# CONFIGURE
+
+```
+cp bot.ini.sample bot.ini
+```
+
+Edit bot.ini:
+
+```
+[general]
+token = XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX <--- edit
+```
 
 # RUN
 
-/lib/systemd/system/telegram-exchange-rates-bot.service
+```
+touch /lib/systemd/system/telegram-exchange-rates-bot.service
+```
 
 ```
 [Unit]
